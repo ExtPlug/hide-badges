@@ -5,6 +5,8 @@ ExtPlug plugin that hides user badges in chat.
 
 ## Installation
 
+If you do not have ExtPlug yet, get it [here](https://extplug.github.io).
+
 You can install this plugin by going to your ExtPlug settings menu, pressing
 "Install Plugin", and entering this Plugin URL:
 
@@ -28,4 +30,3 @@ The built plugin will be stored at `build/hide-badges.js`.
 ## License
 
 [MIT](./LICENSE)
-
