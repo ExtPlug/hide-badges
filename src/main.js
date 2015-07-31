@@ -11,14 +11,27 @@ define(function (require, exports, module) {
       inline: { type: 'boolean', label: 'Inline Chat', default: false }
     },
 
+    style: {
+      '#chat': {
+        '.msg': {
+          'padding': '5px 8px 6px 8px'
+        },
+        '.badge-box': {
+          // can't just display:none, because the user rollover positions itself
+          // relative to the badge box
+          'visibility': 'hidden',
+          'width': 0,
+          'margin-left': 0
+        },
+        '.cm.inline .badge-box': {
+          'margin-left': 0,
+          'margin-right': 0
+        }
+      }
+    },
+
     enable() {
       this._super();
-      this.Style({
-        '#chat': {
-          '.msg': { padding: '5px 8px 6px 8px' },
-          '.badge-box': { display: 'none' }
-        }
-      });
       Events.on('chat:afterreceive', this.onMessage, this);
     },
 
