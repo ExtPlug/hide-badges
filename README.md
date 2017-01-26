@@ -1,6 +1,8 @@
 Hide Badges
 ===========
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/extplug/hide-badges.svg)](https://greenkeeper.io/)
+
 ExtPlug plugin that hides user badges in chat.
 
 ## Installation
