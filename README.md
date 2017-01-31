@@ -11,19 +11,26 @@ You can install this plugin by going to your ExtPlug settings menu, pressing
 "Install Plugin", and entering this Plugin URL:
 
 ```
-https://extplug.github.io/hide-badges/build/hide-badges.js;extplug/hide-badges/main
+https://unpkg.com/extplug-hide-badges
 ```
 
 ## Building
 
 **Note: this section is intended for developers only.**
 
-This plugin uses NPM for dependency management and `gulp` for building.
+First, install dependencies:
 
-```
+```bash
 npm install
-gulp build
 ```
+
+Then, use:
+
+```bash
+npm run build
+```
+
+The plugin will be built using the [ExtPlug CLI](https://github.com/extplug/extplug-cli).
 
 The built plugin will be stored at `build/hide-badges.js`.
 

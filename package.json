@@ -3,18 +3,22 @@
   "version": "1.0.2",
   "license": "MIT",
   "description": "ExtPlug plugin that hides user badges in chat.",
+  "author": "ReAnna <renee@kooi.me>",
+  "main": "build/hide-badges.js",
+  "repository": "extplug/hide-badges",
   "keywords": [
-    "extplug-plugin"
+    "extplug-plugin",
+    "plug.dj"
+  ],
+  "files": [
+    "build",
+    "src"
   ],
   "devDependencies": {
-    "del": "^1.2.0",
-    "gulp": "^3.8.11",
-    "gulp-babel": "^5.1.0",
-    "mkdirp": "^0.5.1",
-    "requirejs": "^2.1.18",
-    "run-sequence": "^1.1.1"
+    "extplug-cli": "^1.0.0"
   },
   "scripts": {
-    "build": "gulp build"
+    "prepublish": "npm run build -- --minify",
+    "build": "extplug bundle src/main.js build/hide-badges.js"
   }
 }
